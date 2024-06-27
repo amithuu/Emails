@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi this is Middleware Response</title>
+</head>
+<body>
+    <h1> {{title}} </h1>
+
+    {% if website.debug %}
+        <div style="padding:20px; background: red; color: white;">
+            You are in Debug Mode. the site is {{ website.url }} <br>
+            The Response Time Taken is {{ website.response_time}}
+        </div>
+    {% endif %}
+    
+</body>
+</html>
